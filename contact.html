@@ -16,9 +16,9 @@
 
 <form>
     <fieldset>
-        <label>First Name<input></label><br>
-        <label>Last Name<input></label><br>
-        <label>Email<input></label><br>
+        <label>First Name<input id="firstName"></label><br>
+        <label>Last Name<input id="lastName"></label><br>
+        <label>Email<input id="email"></label><br>
         <span>Catagory:</span><br>
         <input class="radioBtns" type="radio" name="catagory" value="thematic" id="thematic" checked>
         <label for="thematic">Thematic</label>
@@ -28,10 +28,17 @@
         <label for="whimsical">Whimsical</label>
         <input class="radioBtns" type="radio" name="catagory" value="other" id="otherBtn">
         <label for="otherBtn">Other</label>
-        <label id="otherExplain">Please Explain: <input></label><br>
-        <label>Suggested Caption<input></label><br>
-        <label>Location<input></label><br>
-        <label>Attach photo or link<input></label><br>
+        <label id="otherExplain">Please Explain: <input id="explain"></label><br>
+        <label>Suggested Caption<input id="caption"></label><br>
+        <label>Location<input id="location"></label><br>
+        <span>Attach a :</span>
+        <input type="checkbox" id="photoCheckbox">
+        <label for="photoCheckbox">Photo</label>
+        <input id="photo">
+        <input type="checkbox" id="linkCheckbox">
+        <label for="linkCheckbox">Link</label>
+        <input id="link">
+
     </fieldset>
     <div id="button-display">
         <div class="button" id="submitBtn" type="submit" value="SAVE">Submit</div>
