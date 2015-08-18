@@ -4,6 +4,15 @@ body {
 	color: #fff;
 }
 
+input{
+	border-radius: 6px;
+}
+
+input[type="radio"]:checked + label{
+	color: #f4bc05;
+	opacity: .8;
+}
+
 .banner {
 	font-size: 2rem;
 	text-align: left
@@ -11,12 +20,11 @@ body {
  a {
 	text-decoration: underline;
 	color: #fff;
- 
  }
 
 .firstLetter {
 	font-size: 2.5rem;
-	color: #F4bC05;
+	color: #f4bc05;
 }
 
 #pInPortland {
@@ -28,7 +36,7 @@ h3 {
 }
 
 #googleLink {
-	color: #F4bC05;
+	color: #f4bc05;
 	font-size: 1.5rem;
 }
  
@@ -54,3 +62,23 @@ p {
 #explore {
 	text-align: center;
 }
+.button{
+	border-radius: 6px;
+	max-width: 40%;
+	text-align: center;
+	display: inline-block;
+	margin: 1em 1em;
+	padding: 10px;
+}
+#button-display{
+	align-content: center;
+}
+
+#submitBtn{
+	background-color: #f4bc05;
+}
+
+#cancelBtn{
+	background-color: #570000;
+}
+
