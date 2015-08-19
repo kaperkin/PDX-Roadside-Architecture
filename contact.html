@@ -14,13 +14,16 @@
     <h1 class="banner"><span class="firstLetter" id="pInPortland">
 		P</span>ortland Roadside Architecture</h1></a>
 
-<form>
+<form id="contact">
     <fieldset>
-        <label>First Name<input id="firstName"></label><br>
-        <label>Last Name<input id="lastName"></label><br>
-        <label>Email<input id="email"></label><br>
-        <span>Catagory:</span><br>
-        <input class="radioBtns" type="radio" name="catagory" value="thematic" id="thematic" checked>
+        <input id="firstName" placeholder="First Name">
+        <input id="lastName" placeholder="Last Name (Optional)">
+        <input id="email" placeholder="Email (Optional)">
+        <br>
+        <span id="emailDisclaimer">*We will only email you if we have questions about your submission</span>
+        <br>
+        <span>Suggested Catagory:</span><br>
+        <input class="radioBtns" type="radio" name="catagory" value="thematic" id="thematic">
         <label for="thematic">Thematic</label>
         <input class="radioBtns" type="radio" name="catagory" value="iconic" id="iconic">
         <label for="iconic">Iconic</label><br>
@@ -28,21 +31,21 @@
         <label for="whimsical">Whimsical</label>
         <input class="radioBtns" type="radio" name="catagory" value="other" id="otherBtn">
         <label for="otherBtn">Other</label>
-        <label id="otherExplain">Please Explain: <input id="explain"></label><br>
-        <label>Suggested Caption<input id="caption"></label><br>
-        <label>Location<input id="location"></label><br>
+        <input id="otherExplain" placeholder="Please Explain:">
+        <input id="caption" placeholder="Suggested Caption (Optional)">
+        <input id="geoLocation" placeholder="Location">
         <span>Attach a :</span>
         <input type="checkbox" id="photoCheckbox">
         <label for="photoCheckbox">Photo</label>
-        <input id="photo">
+        <input id="photo" placeholder="Photo Upload">
         <input type="checkbox" id="linkCheckbox">
         <label for="linkCheckbox">Link</label>
-        <input id="link">
+        <input id="link" placeholder="Link">
 
     </fieldset>
     <div id="button-display">
         <div class="button" id="submitBtn" type="submit" value="SAVE">Submit</div>
-        <div class="button" id="cancelBtn">Cancel</div>
+        <div class="button" id="cancelBtn" type="reset">Cancel</div>
     </div>
 </form>
 

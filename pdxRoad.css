@@ -70,6 +70,12 @@ p {
 	margin: 1em 1em;
 	padding: 10px;
 }
+
+.button:hover{
+	cursor: pointer;
+	cursor: hand;
+}
+
 #button-display{
 	align-content: center;
 }
@@ -82,3 +88,13 @@ p {
 	background-color: #570000;
 }
 
+.error{
+	border: 2px solid firebrick;
+	color: darkred;
+	font-weight: bold;
+}
+
+#emailDisclaimer{
+	font-size: .75rem;
+	color: #F4bC05;
+}
