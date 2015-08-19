@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7f842e3-6b7b-4dac-8898-7e3c33fa461d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/contact.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/iconic/iconic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/thematic/thematic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/whimsical.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/contact.js" afterPath="$PROJECT_DIR$/js/contact.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdxRoad.css" afterPath="$PROJECT_DIR$/pdxRoad.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdxRoad.html" afterPath="$PROJECT_DIR$/pdxRoad.html" />
     </list>
     <ignored path="PDXRoad.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pdxRoad.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pdxRoad.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pdxRoad.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0625">
-              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.8642384">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -42,8 +41,9 @@
         <entry file="file://$PROJECT_DIR$/js/contact.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
               <folding>
+                <element signature="n#!!block;n#contactInit#0" expanded="false" />
                 <element signature="n#!!block;n#showOtherExplain#0" expanded="false" />
                 <element signature="n#!!block;n#showPhotoBox#0" expanded="false" />
                 <element signature="n#!!block;n#showLinkBox#0" expanded="false" />
@@ -54,13 +54,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3962264">
-              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="n#!!block;n#drawMainContent#0" expanded="false" />
+                <element signature="n#!!block;n#drawThematicSection#0" expanded="false" />
+                <element signature="n#!!block;n#drawIconicSection#0" expanded="false" />
+                <element signature="n#!!block;n#drawWhimsicalSection#0" expanded="false" />
+                <element signature="n#!!block;n#drawContactSection#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -69,14 +74,12 @@
       <file leaf-file-name="pdxRoad.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pdxRoad.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.88889">
-              <caret line="44" column="89" selection-start-line="44" selection-start-column="89" selection-end-line="44" selection-end-column="89" />
+            <state vertical-scroll-proportion="-34.0">
+              <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
               <folding>
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -91,12 +94,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/contact.html" />
-        <option value="$PROJECT_DIR$/js/contact.js" />
         <option value="$PROJECT_DIR$/thematic.html" />
         <option value="$PROJECT_DIR$/whimsical.html" />
-        <option value="$PROJECT_DIR$/pdxRoad.css" />
-        <option value="$PROJECT_DIR$/pdxRoad.html" />
+        <option value="$PROJECT_DIR$/js/contact.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/pdxRoad.html" />
+        <option value="$PROJECT_DIR$/pdxRoad.css" />
       </list>
     </option>
   </component>
@@ -166,11 +169,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PDX Roadside Architecture" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PDXRoad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PDXRoad" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="seperate_file_pages" />
+              <option name="myItemId" value="PDX Roadside Architecture" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -446,6 +459,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="83" column="1" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
           <folding>
+            <element signature="n#!!block;n#contactInit#0" expanded="false" />
             <element signature="n#!!block;n#showOtherExplain#0" expanded="false" />
             <element signature="n#!!block;n#showPhotoBox#0" expanded="false" />
             <element signature="n#!!block;n#showLinkBox#0" expanded="false" />
@@ -461,6 +475,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!block;n#drawMainContent#0" expanded="false" />
+            <element signature="n#!!block;n#drawThematicSection#0" expanded="false" />
+            <element signature="n#!!block;n#drawIconicSection#0" expanded="false" />
+            <element signature="n#!!block;n#drawWhimsicalSection#0" expanded="false" />
+            <element signature="n#!!block;n#drawContactSection#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -489,20 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pdxRoad.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.88889">
-          <caret line="44" column="89" selection-start-line="44" selection-start-column="89" selection-end-line="44" selection-end-column="89" />
-          <folding>
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PDX Roadside Architecture/seperate_file_pages/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15763547">
@@ -511,19 +516,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pdxRoad.css">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0625">
-          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!block;n#drawMainContent#0" expanded="false" />
+            <element signature="n#!!block;n#drawThematicSection#0" expanded="false" />
+            <element signature="n#!!block;n#drawIconicSection#0" expanded="false" />
+            <element signature="n#!!block;n#drawWhimsicalSection#0" expanded="false" />
+            <element signature="n#!!block;n#drawContactSection#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/contact.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding>
+            <element signature="n#!!block;n#contactInit#0" expanded="false" />
             <element signature="n#!!block;n#showOtherExplain#0" expanded="false" />
             <element signature="n#!!block;n#showPhotoBox#0" expanded="false" />
             <element signature="n#!!block;n#showLinkBox#0" expanded="false" />
@@ -533,13 +546,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/pdxRoad.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3962264">
-          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        <state vertical-scroll-proportion="-34.0">
+          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdxRoad.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8642384">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

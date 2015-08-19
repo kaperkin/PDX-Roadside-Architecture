@@ -34,6 +34,7 @@ function drawMainContent(){
    thematicSection.style.display="none";
    iconicSection.style.display="none";
    whimsicalSection.style.display="none";
+   contactSection.style.display="none";
    mainContent.style.display="block";
    window.scrollTo(0,0);
 }

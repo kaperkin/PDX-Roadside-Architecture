@@ -1,7 +1,7 @@
 
 ////// init function to kick it all off //////////////////////
 /////////////////////////////////////////////////////////
-function init() {
+function contactInit() {
 	// variable declarations
     window.firstName = document.getElementById("firstName");
     window.lastName = document.getElementById("lastName");
@@ -36,7 +36,7 @@ function init() {
 }
 
 //////// calls init function when DOM loads ////////////
-document.addEventListener("DOMContentLoaded", init);
+document.addEventListener("DOMContentLoaded", contactInit);
 
 //Checks if otherBtn is checked, then shows/hides input
 function showOtherExplain() {
