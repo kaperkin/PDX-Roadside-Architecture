@@ -58,6 +58,14 @@ p {
 	margin-top: 0px;
 	margin-bottom: 25px;
 }
+/*underline main section headings*/
+.underline{
+	text-decoration: underline;
+}
+.underline:hover{
+	cursor: pointer;
+	cursor: hand;
+}
 
 #explore {
 	text-align: center;
