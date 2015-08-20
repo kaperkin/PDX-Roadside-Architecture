@@ -1,0 +1,149 @@
+/*************************************************************/
+/*********************Universal CSS***************************/
+/*************************************************************/
+body {
+	background-color: #0D0039;
+	color: #fff;
+}
+
+h3 {
+	font-weight: bold;
+}
+/*************************************************************/
+/******underline content section and headings and banner******/
+/*************************************************************/
+.underline{
+	text-decoration: underline;
+}
+.underline:hover{
+	cursor: pointer;
+	cursor: hand;
+	color: #F4bC05;
+}
+
+.underline:hover .firstLetter{
+	cursor: pointer;
+	cursor: hand;
+	color: #fff;
+}
+
+.underline:visited {
+	color: #fff;
+}
+
+/*************************************************************/
+/******* banner Portland Roadside Architecture ***************/
+/*************************************************************/
+#pInPortland {
+	font-size: 6rem;
+}
+
+.banner {
+	font-size: 2rem;
+	text-align: left
+}
+/*************************************************************/
+/************* content sections *******************************/
+/*************************************************************/
+.wrapper {
+	flex: 1;
+}
+
+.firstLetter {
+	font-size: 2.5rem;
+	color: #f4bc05;
+}
+
+img {
+	display: flex;
+	align-content: space-around;
+	border: solid 2px white;
+	border-radius: 12%;
+	max-width: 270px;
+	max-height:270px;
+	margin: auto;	
+}
+
+p {
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+
+/*************************************************************/
+/************* google map link *******************************/
+/*************************************************************/
+#explore {
+	text-align: center;
+}
+
+#googleLinkDiv {
+	color: #f4bc05;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+#googleLink:hover{
+	color: #fff;
+}
+
+#googleLink:visited{
+	color: #F4bC05;
+}
+
+/*************************************************************/
+/************* contact section *******************************/
+/*************************************************************/
+input{
+	border-radius: 6px;
+}
+
+input[type="radio"]:checked + label{
+	color: #f4bc05;
+	opacity: .8;
+}
+
+input[type="radio"]:hover{
+	cursor: pointer;
+	cursor: hand;
+}
+
+input[type="checkbox"]:hover{
+	cursor: pointer;
+	cursor: hand;
+}
+.button{
+	border-radius: 6px;
+	max-width: 40%;
+	text-align: center;
+	display: inline-block;
+	margin: 1em 1em;
+	padding: 10px;
+}
+
+.button:hover{
+	cursor: pointer;
+	cursor: hand;
+}
+
+#button-display{
+	align-content: center;
+}
+
+#submitBtn{
+	background-color: #f4bc05;
+}
+
+#cancelBtn{
+	background-color: #570000;
+}
+
+.error{
+	border: 2px solid firebrick;
+	color: darkred;
+	font-weight: bold;
+}
+
+#emailDisclaimer{
+	font-size: .75rem;
+	color: #F4bC05;
+}
