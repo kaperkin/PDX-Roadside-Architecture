@@ -104,7 +104,7 @@ function createFormItem(){
         "otherExplain": otherExplain.value,
         "caption": caption.value,
         "geoLocation": geoLocation.value,
-        "photo": photo.value,
+        "photo": photo.files[0],
         "link": link.value
     };
     console.log(item);
@@ -144,8 +144,9 @@ function sendPost(item, url){
 
     // Create new XMLHttpRequest
     var request = new XMLHttpRequest();
-    request.onload(alert("Thanks for your submission!"));
+    request.onload = alert("Thanks for your submission!");
     request.open("POST", url);
+    //request.setRequestHeader("Content-Type", "multipart/form-data");
     request.send(form_data);
 }
 

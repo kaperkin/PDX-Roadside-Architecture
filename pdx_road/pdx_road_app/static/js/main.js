@@ -2,6 +2,9 @@
 // add scroll to top button
 //captions
 //underline link after visited on subsections
+//photo upload not working
+// I hate everything
+//underlining on section heads larger for first letter
 
 ////// init function to kick it all off //////////////////////
 /////////////////////////////////////////////////////////
@@ -14,22 +17,22 @@ function mainInit(){
     window.whimsicalSection = document.getElementById("whimsicalSection");
     window.contactSection = document.getElementById("contactSection");
     window.contactLinks=document.getElementsByClassName("contactLink");
+    window.scrollArrow=document.getElementById("scrollArrow");
 
     ///// Hide content sections ///////
-    thematicSection.style.display="none";
-    iconicSection.style.display="none";
-    whimsicalSection.style.display="none";
-    contactSection.style.display="none";
+   drawMainContent();
+
 
     ////// Add Event Listeners ////////
     home.addEventListener("click", drawMainContent);
     document.getElementById("thematicBlurb").addEventListener("click", drawThematicSection);
     document.getElementById("iconicBlurb").addEventListener("click", drawIconicSection);
     document.getElementById("whimsicalBlurb").addEventListener("click", drawWhimsicalSection);
+    scrollArrow.addEventListener("click", scrollToTop);
     for(var i= 0; i<contactLinks.length; i++){
         contactLinks[i].addEventListener("click", drawContactSection);
-
     }
+
 }
 document.addEventListener("DOMContentLoaded", mainInit);
 
@@ -41,6 +44,9 @@ function drawMainContent(){
    whimsicalSection.style.display="none";
    contactSection.style.display="none";
    mainContent.style.display="block";
+    if (screen.width >= 1200){
+        scrollArrow.style.display="none";
+    }
    window.scrollTo(0,0);
 }
 
@@ -48,23 +54,39 @@ function drawMainContent(){
 function drawThematicSection(){
     mainContent.style.display="none";
     thematicSection.style.display="block";
+    if (screen.width >= 1200){
+        scrollArrow.style.display="inline-block";
+    }
     window.scrollTo(0,0);
 }
 
 function drawIconicSection(){
     mainContent.style.display="none";
     iconicSection.style.display="block";
+    if (screen.width >= 1200){
+        scrollArrow.style.display="inline-block";
+    }
     window.scrollTo(0,0);
 }
 
 function drawWhimsicalSection(){
     mainContent.style.display="none";
     whimsicalSection.style.display="block";
+    if (screen.width >= 1200){
+        scrollArrow.style.display="inline-block";
+    }
     window.scrollTo(0,0);
 }
 
 function drawContactSection(){
     mainContent.style.display="none";
+    thematicSection.style.display="none";
+    iconicSection.style.display="none";
+    whimsicalSection.style.display="none";
     contactSection.style.display="block";
+    window.scrollTo(0,0);
+}
+
+function scrollToTop(){
     window.scrollTo(0,0);
 }

@@ -7,6 +7,7 @@ from django.views.decorators.csrf import csrf_exempt
 @csrf_exempt
 def make_submission(request):
     if request.POST:
+        print(request.FILES)
         submission = Submission()
         submission.firstName = request.POST["firstName"]
         submission.lastName = request.POST["lastName"]
@@ -15,7 +16,7 @@ def make_submission(request):
         submission.otherCategoryExplain = request.POST["otherExplain"]
         submission.caption = request.POST["caption"]
         submission.geoLocation = request.POST["geoLocation"]
-        submission.photo = request.POST["photo"]
+        submission.photo = request.FILES["photo"]
         submission.link = request.POST["link"]
         submission.save()
         return HttpResponse(str(submission.id))

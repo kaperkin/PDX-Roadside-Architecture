@@ -9,7 +9,7 @@ class Submission(models.Model):
     otherCategoryExplain = models.TextField()
     caption = models.CharField(max_length = 200)
     geoLocation = models.CharField(max_length = 200)
-    photo = models.CharField(max_length=200)#how to do a photo upload
+    photo = models.ImageField(upload_to='../uploads')
     link = models.CharField(max_length = 200)
 
     def __str__(self):

@@ -1,0 +1,120 @@
+h2{
+	font-size: 1.5em;
+}
+h3 {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+/*************************************************************/
+/******* banner Portland Roadside Architecture ***************/
+/*************************************************************/
+#pInPortland {
+	font-size: 4em;
+	/*border-bottom: 5px solid white;*/
+}
+
+.banner {
+	font-size: 3em;
+	text-align: left;
+}
+
+/*************************************************************/
+/************* main content sections *************************/
+/*************************************************************/
+
+p {
+	font-size: 1em;
+}
+
+.wrapper {
+    display: flex;
+    /*flex-wrap: nowrap;*/
+}
+
+/*************************************************************/
+/****************** content sections *************************/
+/*************************************************************/
+
+.firstLetter {
+	font-size: 3em;
+	color: #f4bc05;
+}
+
+img {
+	border: solid 2px white;
+	border-radius: 12%;
+	max-width: 90%;
+}
+
+img + p{
+	text-align: center;
+}
+
+.imageWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imageAndCaption{
+    align-self: flex-end;
+}
+
+/*************************************************************/
+/************* google map link *******************************/
+/*************************************************************/
+
+#googleLinkDiv {
+	font-size: 2em;
+}
+
+/*************************************************************/
+/************* contact section *******************************/
+/*************************************************************/
+input{
+	font-size: 1.5em;
+}
+
+input[type="radio"]{
+	min-height: 25px;
+	min-width: 25px;
+}
+
+label{
+	font-size: 1.5em;
+}
+
+input[type="checkbox"]{
+	min-height: 25px;
+	min-width: 25px;
+}
+
+.contactSpan{
+	font-size: 2em;
+}
+
+.button{
+    max-width: 45%;
+    font-size: 1.5em;
+    display: inline-block;
+    margin: 1em 1em;
+    padding: 20px;
+}
+
+#emailDisclaimer{
+	font-size: 1.25em;
+}
+
+/*************************************************************/
+/**************** scroll arrow *******************************/
+/*************************************************************/
+#scrollArrow{
+  	font-size: 1.5em;
+	color: #F4bC05;
+    opacity: .8;
+	position: fixed;
+	bottom: 25px;
+	right: 40px;
+	text-decoration: underline;
+}
