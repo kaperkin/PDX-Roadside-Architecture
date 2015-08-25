@@ -1,8 +1,5 @@
 // ToDo
-// add scroll to top button
 //captions
-//underline link after visited on subsections
-// I hate everything
 //underlining on section heads larger for first letter
 
 ////// init function to kick it all off //////////////////////
