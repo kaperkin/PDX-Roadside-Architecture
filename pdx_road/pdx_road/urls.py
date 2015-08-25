@@ -22,3 +22,9 @@ if settings.DEBUG:
         url(r'^$', 'serve', kwargs={'path': 'html/pdx_road.html'}),
         url(r'^(?P<path>(?:js|css|img)/.*)$', 'serve'),
     )
+    urlpatterns += patterns(
+        '',
+        url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {
+            'document_root': settings.MEDIA_ROOT,
+        }),
+    )

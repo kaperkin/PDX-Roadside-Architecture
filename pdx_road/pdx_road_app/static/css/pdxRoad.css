@@ -119,3 +119,16 @@ input[type="checkbox"]:hover{
 	font-size: 2.25em;
 	color: #F4bC05;
 }
+
+/*************************************************************/
+/**************** scroll arrow *******************************/
+/*************************************************************/
+footer{
+	transition: all 1s ease;
+}
+
+#scrollArrow:hover{
+	cursor: pointer;
+	cursor: hand;
+	color: white;
+}

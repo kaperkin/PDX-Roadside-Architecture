@@ -1,3 +1,8 @@
+// ToDo
+// fix upload path
+//add path to model class?
+
+
 
 ////// init function to kick it all off //////////////////////
 /////////////////////////////////////////////////////////
@@ -144,9 +149,8 @@ function sendPost(item, url){
 
     // Create new XMLHttpRequest
     var request = new XMLHttpRequest();
-    request.onload = alert("Thanks for your submission!");
+    request.onload = drawMainContent;
     request.open("POST", url);
     //request.setRequestHeader("Content-Type", "multipart/form-data");
     request.send(form_data);
 }
-
