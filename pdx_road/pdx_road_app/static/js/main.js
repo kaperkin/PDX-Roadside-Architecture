@@ -2,7 +2,6 @@
 // add scroll to top button
 //captions
 //underline link after visited on subsections
-//photo upload not working
 // I hate everything
 //underlining on section heads larger for first letter
 
@@ -51,7 +50,7 @@ function drawMainContent(){
     if (screen.width >= 1200){
         scrollArrow.style.display="none";
     }
-   window.scrollTo(0,0);
+  scrollToTop();
 }
 
 ///////// functions to draw sections ///////////
@@ -65,7 +64,7 @@ function drawThematicSection(){
             thematicImgs[m].addEventListener("click", drawLightbox);
         }
     }
-    window.scrollTo(0,0);
+   scrollToTop();
 }
 
 function drawIconicSection(){
@@ -78,7 +77,7 @@ function drawIconicSection(){
             iconicImgs[m].addEventListener("click", drawLightbox);
         }
     }
-    window.scrollTo(0,0);
+    scrollToTop();
 }
 
 function drawWhimsicalSection(){
@@ -91,7 +90,7 @@ function drawWhimsicalSection(){
             whimsicalImgs[m].addEventListener("click", drawLightbox);
         }
     }
-    window.scrollTo(0,0);
+    scrollToTop();
 }
 
 function drawContactSection(){
@@ -100,7 +99,7 @@ function drawContactSection(){
     iconicSection.style.display="none";
     whimsicalSection.style.display="none";
     contactSection.style.display="flex";
-    window.scrollTo(0,0);
+    scrollToTop();
 }
 
 function scrollToTop(){
@@ -110,19 +109,33 @@ function scrollToTop(){
 function drawLightbox(e){
     var lightbox= document.createElement("div");
     var imgCapDiv = document.createElement("div");
+    var extraDiv = document.createElement("div");
+    var extraExtraDiv = document.createElement("div");
     var capDiv = document.createElement("p");
     var imgDiv = document.createElement("img");
     var imgCaption =  e.target.parentElement.lastElementChild;
 
+
     lightbox.id="lightbox";
     imgCapDiv.id="imgCapDiv";
+    extraDiv.id="extraDiv";
+    extraExtraDiv.id="extraExtraDiv";
     imgDiv.id="imgDiv";
-    capDiv.id="imgCapDiv";
+    capDiv.id="capDiv";
+    imgDiv.className="imgSelf";
+
 
     imgDiv.setAttribute("src", e.target.getAttribute("src") );
+
     capDiv.innerHTML = imgCaption.innerHTML;
-    imgCapDiv.appendChild(imgDiv);
-    imgCapDiv.appendChild(capDiv);
+    //extraDiv.appendChild(imgDiv);
+    extraExtraDiv.appendChild(imgDiv);
+    extraExtraDiv.appendChild(capDiv);
+    extraDiv.appendChild(extraExtraDiv);
+    //extraDiv.appendChild(capDiv);
+    imgCapDiv.appendChild(extraDiv);
+    //imgCapDiv.appendChild(imgDiv);
+    //imgCapDiv.appendChild(capDiv);
     lightbox.appendChild(imgCapDiv);
 
     document.body.appendChild(lightbox);

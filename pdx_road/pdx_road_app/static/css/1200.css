@@ -81,12 +81,38 @@ img + p{
 
 #imgDiv{
 	opacity: 1;
-	width: 90%;
+	/*max-width: 150%;*/
+}
+
+.imgSelf{
+	min-height: 75%;
+}
+
+#extraDiv{
+	height: 100%;
+	width:100%;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#extraExtraDiv{
+	margin: auto;
+	height: 95%;
+	width: 95%;
 }
 
 #imgCapDiv {
 	margin: auto;
+	width: 90%;
+	height: 90%;
 }
+
+#capDiv{
+	margin-bottom: auto;
+}
+
 /*************************************************************/
 /************* google map link *******************************/
 /*************************************************************/
@@ -122,8 +148,8 @@ label{
 }
 
 input[type="checkbox"]{
-	min-height: 35px;
-	min-width: 35px;
+	min-height: 25px;
+	min-width: 25px;
 }
 
 .contactSpan{
