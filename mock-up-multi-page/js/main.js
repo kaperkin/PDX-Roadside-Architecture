@@ -1,3 +1,8 @@
+// ToDo
+// add scroll to top button
+//captions
+//underline link after visited on subsections
+
 ////// init function to kick it all off //////////////////////
 /////////////////////////////////////////////////////////
 function mainInit(){

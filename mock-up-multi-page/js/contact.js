@@ -85,6 +85,33 @@ function cancelForm(){
     }
 }
 
+//////// create Form Object function called when form is validated////////
+function createFormItem(){
+    var category = "";
+    for(var i=0; i<radioBtns.length; i++){
+        if(radioBtns[i].checked){
+            category = radioBtns[i].value;
+            break
+        }
+    }
+
+    item = {
+        "action": "SAVE",
+        "firstName": firstName.value,
+        "lastName": lastName.value,
+        "emailAddress": emailAddress.value,
+        "catagory": category,
+        "otherCatagoryExplain": otherExplain.value,
+        "caption": caption.value,
+        "geoLocation": geoLocation.value,
+        "photo": photo.value,
+        "link": link.value
+    };
+    console.log(item);
+    sendPost(item, '/sendContact/');
+}
+
+
 //////// validate fields on form when submit button pressed ////////
 function validateForm(){
     //validate first name at least 2 letters long
@@ -101,4 +128,24 @@ function validateForm(){
     }else{
         geoLocation.classList.remove("error");
     }
+    // if it passes both validations, send to createFormObject //
+    if((firstName.value.length > 2) && (geoLocation.value.length > 8)){
+        createFormItem();
+    }
 }
+
+//////// send form item to post////////
+function sendPost(item, url){
+    var formData = new formData;
+
+    for (var key in item){
+        formData.append(key, item[key]);
+    }
+
+    // Create new XMLHttpRequest
+    var request = new XMLHttpRequest();
+    request.onload = alert("Thanks for your submission!");
+    request.open("POST", url);
+    request.send(form_data);
+}
+

@@ -11,7 +11,7 @@ class Submission(models.Model):
     otherCategoryExplain = models.TextField()
     caption = models.CharField(max_length = 200)
     geoLocation = models.CharField(max_length = 200)
-    photo = models.ImageField(upload_to=settings.MEDIA_URL)
+    photo = models.ImageField(upload_to="media")
     link = models.CharField(max_length = 200)
 
     def thumbnail(self):

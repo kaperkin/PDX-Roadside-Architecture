@@ -1,6 +1,6 @@
 // ToDo
 //captions
-//underlining on section heads larger for first letter
+//underlining on section heads larger for first letter in Ice weasel
 
 ////// init function to kick it all off //////////////////////
 /////////////////////////////////////////////////////////
@@ -125,14 +125,10 @@ function drawLightbox(e){
     imgDiv.setAttribute("src", e.target.getAttribute("src") );
 
     capDiv.innerHTML = imgCaption.innerHTML;
-    //extraDiv.appendChild(imgDiv);
     extraExtraDiv.appendChild(imgDiv);
     extraExtraDiv.appendChild(capDiv);
     extraDiv.appendChild(extraExtraDiv);
-    //extraDiv.appendChild(capDiv);
     imgCapDiv.appendChild(extraDiv);
-    //imgCapDiv.appendChild(imgDiv);
-    //imgCapDiv.appendChild(capDiv);
     lightbox.appendChild(imgCapDiv);
 
     document.body.appendChild(lightbox);
