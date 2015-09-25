@@ -9,6 +9,23 @@ h3 {
 /*************************************************************/
 /******* banner Portland Roadside Architecture ***************/
 /*************************************************************/
+.bannerParent{
+	max-width: 75%;
+	border-bottom: 3px solid white;
+	margin-bottom: 2em;
+	transition: border 1s ease;
+}
+
+.bannerParent:hover{
+	cursor: pointer;
+	cursor: hand;
+	border-bottom-color: #F4bC05;
+}
+
+.bannerParent:visited{
+	border-bottom-color:#fff;
+}
+
 #pInPortland {
 	font-size: 5em;
 }

@@ -6,17 +6,17 @@
 /////////////////////////////////////////////////////////
 function mainInit(){
     ///// Declare variables /////
-    window.home = document.getElementById("home");
-    window.mainContent = document.getElementById("mainContent");
-    window.thematicSection = document.getElementById("thematicSection");
-    window.iconicSection = document.getElementById("iconicSection");
+    window.home             = document.getElementById("home");
+    window.mainContent      = document.getElementById("mainContent");
+    window.thematicSection  = document.getElementById("thematicSection");
+    window.iconicSection    = document.getElementById("iconicSection");
     window.whimsicalSection = document.getElementById("whimsicalSection");
-    window.contactSection = document.getElementById("contactSection");
-    window.contactLinks=document.getElementsByClassName("contactLink");
-    window.scrollArrow=document.getElementById("scrollArrow");
-    window.thematicImgs=document.getElementsByClassName("thematicImg");
-    window.iconicImgs=document.getElementsByClassName("iconicImg");
-    window.whimsicalImgs=document.getElementsByClassName("whimsicalImg");
+    window.contactSection   = document.getElementById("contactSection");
+    window.contactLinks     = document.getElementsByClassName("contactLink");
+    window.scrollArrow      = document.getElementById("scrollArrow");
+    window.thematicImgs     = document.getElementsByClassName("thematicImg");
+    window.iconicImgs       = document.getElementsByClassName("iconicImg");
+    window.whimsicalImgs    = document.getElementsByClassName("whimsicalImg");
 
     ///// Hide content sections ///////
    drawMainContent();
@@ -95,7 +95,7 @@ function drawContactSection(){
     thematicSection.style.display="none";
     iconicSection.style.display="none";
     whimsicalSection.style.display="none";
-    contactSection.style.display="flex";
+    contactSection.style.display="block";
     scrollToTop();
 }
 
@@ -104,8 +104,8 @@ function scrollToTop(){
 }
 
 function drawLightbox(e){
-    var lightbox= document.createElement("div");
-    var imgCapDiv = document.createElement("div");
+    var lightbox  = document.createElement("div"),
+        imgCapDiv = document.createElement("div");
     var extraDiv = document.createElement("div");
     var extraExtraDiv = document.createElement("div");
     var capDiv = document.createElement("p");
@@ -133,7 +133,8 @@ function drawLightbox(e){
 
     document.body.appendChild(lightbox);
 
-    imgDiv.addEventListener("click", function(e){
-        lightbox.parentNode.removeChild(lightbox);
+    lightbox.addEventListener("click", function(e){
+        this.remove(this);
+        //lightbox.parentNode.removeChild(lightbox);
     })
 }

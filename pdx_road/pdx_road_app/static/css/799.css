@@ -1,6 +1,6 @@
 
 h2{
-	font-size: 2.5em;
+	font-size: 2em;
 }
 h3 {
 	font-weight: bold;
@@ -15,11 +15,11 @@ p{
 /******* banner Portland Roadside Architecture ***************/
 /*************************************************************/
 #pInPortland {
-	font-size: 6em;
+	font-size: 4em;
 }
 
 .banner {
-	font-size: 5.5em;
+	font-size: 2.75em;
 	text-align: left;
 }
 
@@ -28,7 +28,7 @@ p{
 /*************************************************************/
 
 .firstLetter {
-	font-size: 3em;
+	font-size: 2.5em;
 	color: #f4bc05;
 }
 
@@ -37,8 +37,7 @@ img {
 	align-content: space-around;
 	border: solid 2px white;
 	border-radius: 12%;
-	min-width: 270px;
-	min-height:270px;
+	max-width: 95%;
 	margin: auto;
 	align-self: center;
 }
@@ -51,44 +50,52 @@ img + p{
 /************* contact section *******************************/
 /*************************************************************/
 input{
-	font-size: 3.5em;
+	font-size: 1.5em;
 }
 
 input[type="radio"]{
-	min-height: 40px;
-	min-width: 40px;
+	min-height: 20px;
+	min-width: 20px;
 }
 
 label{
-	font-size: 3.5em;
+	font-size: 1.5em;
 }
 
 input[type="checkbox"]{
-	min-height: 40px;
-	min-width: 40px;
+	min-height: 20px;
+	min-width: 20px;
 }
 
 .contactSpan{
-	font-size: 3.5em;
+	font-size: 1.5em;
 }
 
 .button{
     display: inline-block;
     max-width: 45%;
-    font-size: 3em;
-    margin: 1.5em 1.5em;
-    padding: 30px;
+    font-size: 1.5em;
+    margin: .25em .25em;
+    padding: 20px;
+}
+
+#emailDisclaimer{
+	font-size: 1em;
+}
+
+#contactSection{
+	width: 100%;
 }
 
 /*************************************************************/
 /**************** scroll arrow *******************************/
 /*************************************************************/
 #scrollArrow{
-  	font-size: 4em;
+  	font-size: 1.25em;
 	color: #F4bC05;
     opacity: .8;
 	position: fixed;
-	top: 25px;
-	right: 40px;
+	top: 8%;
+	right: 10%;
 	text-decoration: underline;
 }
